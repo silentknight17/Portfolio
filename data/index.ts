@@ -205,13 +205,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    redirectTo: "https://github.com/silentknight17",
   },
   {
     id: 2,
     img: "/twit.svg",
+    redirectTo: "https://x.com/storm___pegasus",
   },
   {
     id: 3,
     img: "/link.svg",
+    redirectTo: "https://www.linkedin.com/in/sarvagya-prateek-926b5717b/",
   },
 ];

@@ -1,4 +1,3 @@
-import { FaLocationArrow } from "react-icons/fa";
 /* eslint-disable @next/next/no-img-element */
 import { PinContainer } from "./ui/3d-pin";
 import React from "react";
@@ -49,13 +48,6 @@ const RecentProjects = () => {
           </div>
         ))}
       </div>
-
-      {/* <div className="flex justify-center items-center">
-        <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-          Check Live Site
-        </p>
-        <FaLocationArrow className="ms-3" color="#CBACF9" />
-      </div> */}
     </div>
   );
 };

@@ -1,6 +1,6 @@
+"use client";
 
 import Experience from "@/components/Experience";
-import { FaHome } from "react-icons/fa";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import Footer from "@/components/Footer";
 import Grid from "@/components/Grid";

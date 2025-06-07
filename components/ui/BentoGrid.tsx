@@ -125,9 +125,9 @@ export const BentoGridItem = ({
           </div>
           {id === 5 ? (
             <div className="mt-4">
-              {education?.map((item) => {
+              {education?.map((item, id) => {
                 return (
-                  <div className="mb-4 flex flex-col">
+                  <div className="mb-4 flex flex-col" key={id}>
                     <div className="text-[18px] font-bold">{item?.degree}</div>
                     <div className="text-[16px] font-semibold">
                       {item?.description}
@@ -149,9 +149,9 @@ export const BentoGridItem = ({
 
           {id === 1 && (
             <div className="mt-5">
-              {skillSet?.map((skill) => {
+              {skillSet?.map((skill, id) => {
                 return (
-                  <div className="flex flex-col mb-4">
+                  <div className="flex flex-col mb-4" key={id}>
                     <div className="font-bold text-lg">{skill?.skillSubheading}</div>
                     <div>{skill?.skills}</div>
                   </div>

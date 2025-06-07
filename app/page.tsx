@@ -1,4 +1,3 @@
-"use client";
 
 import Experience from "@/components/Experience";
 import { FaHome } from "react-icons/fa";

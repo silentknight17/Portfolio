@@ -106,9 +106,10 @@ export const BentoGridItem = ({
           )}
         </div>
         {id === 6 && (
-          <BackgroundGradientAnimation>
-            <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
-          </BackgroundGradientAnimation>
+          // <BackgroundGradientAnimation>
+          //   <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
+          // </BackgroundGradientAnimation>
+          <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
         )}
 
         <div
@@ -118,7 +119,8 @@ export const BentoGridItem = ({
           )}
         >
           <div
-            className={`${id === 5 ? "" : "max-w-96"} ${id === 3 ? "text-[16px]" : "lg:text-3xl text-lg"
+            className={`${id === 5 ? "" : "max-w-96"} ${
+              id === 3 ? "text-[16px]" : "lg:text-3xl text-lg"
             } font-sans  font-bold z-10`}
           >
             {title}
@@ -152,7 +154,9 @@ export const BentoGridItem = ({
               {skillSet?.map((skill, id) => {
                 return (
                   <div className="flex flex-col mb-4" key={id}>
-                    <div className="font-bold text-lg">{skill?.skillSubheading}</div>
+                    <div className="font-bold text-lg">
+                      {skill?.skillSubheading}
+                    </div>
                     <div>{skill?.skills}</div>
                   </div>
                 );

@@ -30,12 +30,12 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi, I&apos;m Sarvagya, a Next.js Developer based in Noida, India
+            Hi, I&apos;m Sarvagya Prateek, a Senior Frontend Developer based in Noida, India
           </p>
 
-          <a href="#about">
+          <a href="resume.pdf" download>
             <MagicButton
-              title="Show my work"
+              title="Download my Resume"
               icon={<FaLocationArrow />}
               position="right"
             />

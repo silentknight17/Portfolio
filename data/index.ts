@@ -1,25 +1,25 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "Experience", link: "#work_experience" },
   { name: "Contact", link: "#contact" },
 ];
 
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title: "Skills",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
-    titleClassName: "justify-end",
+    titleClassName: "justify-center",
     img: "/b1.svg",
     spareImg: "",
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
-    description: "",
+    title: "Accolades",
+    description: "Multiple Jeevansathi Rockstar awards and a coveted Platinum Infoedge Merit Award for outstanding performance in critical projects",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-start",
@@ -28,7 +28,7 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "My tech stack",
+    title: "Day to Day Tech Stack",
     description: "I constantly try to improve",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -38,7 +38,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title: "Frontend Engineer with an Eye on AI; UI-Driven. AI-Inspired.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -49,11 +49,11 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
-    description: "The Inside Scoop",
+    title: "Education",
+    description: "Motilal Nehru National Institute of Technology, Allahabad",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-    titleClassName: "justify-center md:justify-start lg:justify-center",
+    titleClassName: "justify-start",
     img: "/b5.svg",
     spareImg: "/grid.svg",
   },
@@ -69,135 +69,114 @@ export const gridItems = [
   },
 ];
 
+export const skillSet = [
+  {
+    skillSubheading: "Languages",
+    skills: "Javascript, TypeScript, C, C++",
+  },
+  {
+    skillSubheading: "Frontend Technologies and Framework",
+    skills: "HTML, CSS, React Js, Next Js, Tailwind CSS, TensorFlow.js",
+  },
+  {
+    skillSubheading: "Backend Technologies and Frameworks",
+    skills: "NodeJS, ExpressJS",
+  },
+  {
+    skillSubheading: "Other key skills",
+    skills: "Tech Designing, Documenting, Debugging, Deployment, Server Maintenance, Git, Agile Methodology",
+  },
+  
+]
+
+export const education = [
+  {
+    id: 1,
+    degree: "Bachelor of Technology",
+    description: "Motilal Nehru National Institute of Technology, Allahabad",
+    marks: "CPI: 9.06"
+  },
+  {
+    id: 2,
+    degree: "Senior Secondary Education (ISC) (Class 12)",
+    description: "Holy Cross Convent School, Ballia, Uttar Pradesh",
+    marks: "Percentage: 97.75%",
+  },
+  {
+    id:3,
+    degree: "Secondary Education (ICSE) (Class 10)",
+    description: "Holy Cross Convet School, Ballia, Uttar Pradesh", 
+    marks: "Percentage: 97.20%",
+  }
+]
+
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    title: "Jeevansathi Monetization Initiatives",
+    des: "List of Projects which were focussed on increasing the revenue of Jeevansathi Business",
+    img: "/JSMonetisation.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/re.svg", "nodejs.webp"],
+    link: "https://www.notion.so/Jeevansathi-Monetization-Initiatives-20afaaac223a809aa5b8c3d0550e55a7?source=copy_link",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    title: "Jeevansathi Premier and Reviews",
+    des: "Mobile and Desktop Site Pages for the Premier Section of Jeevansathi, meant for affluent people",
+    img: "/premier.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/re.svg"],
+    link: "https://www.jeevansathi.com/jspremier",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    title: "Personalised Wedding Invite",
+    des: "Creation of personalized wedding invitation videos (which can be used to create Virtual Influencers too) using audio generation, image hosting, and video synthesis APIs",
+    img: "/weddingInvite.jpeg",
+    iconLists: ["python.jpeg", "collab.png"],
+    link: "https://github.com/silentknight17/Personalised-wedding-invite",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    title: "Detect Similar Images",
+    des: "Used to detect similar images using TensorFlow.js",
+    img: "/Detection.jpg",
+    iconLists: ["/next.svg", "/js.png", "tfjs.png"],
+    link: "https://github.com/silentknight17/Detecting-Similar-Images",
   },
 ];
 
-export const testimonials = [
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-];
 
-export const companies = [
-  {
-    id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
-  },
-  {
-    id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
-  },
-  {
-    id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
-  },
-  {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
-  },
-  {
-    id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
-  },
-];
+
 
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Senior Software Engineer at Info edge India",
+    desc: "Currently working in this role for Jeevansathi business vertical, building web apps which can are used by Android as well ios apps. Responsible for developing and maintaining the frontend ecosystem",
+    className: "md:col-span-2", 
+    thumbnail: "/exp4.svg",
+  },
+  {
+    id: 2,
+    title: "Software Engineer at Info edge India",
+    desc: "Building responsive, scalable web apps for Jeevansathi business vertical of Infoedge primarily working in Payments section",
+    className: "md:col-span-2", 
+    thumbnail: "/exp2.svg",
+  },
+  
+  {
+    id: 3,
+    title: "Nestle India Winter Intern",
+    desc: "Designed Web apps to showcase the Q-Pillars necessary for maintaining the quality of Nestle Products",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
-    id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
-  },
-  {
-    id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
-  },
-  {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Marketing and PR Lead for College Societies",
+    desc: "While my primary focus is development, I’ve also gained experience in Marketing and Public Relations—serving as the PR Lead for my college’s Cultural Festival and the Marketing Lead for its Hackathon event",
     className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
+    thumbnail: "/exp3.svg",
   },
 ];
 

@@ -10,6 +10,7 @@ import animationData from "@/data/confetti.json";
 /* eslint-disable @next/next/no-img-element */
 import { cn } from "@/lib/utils";
 import { useState } from "react";
+import { education, skillSet } from "@/data";
 
 export const BentoGrid = ({
   className,
@@ -116,17 +117,48 @@ export const BentoGridItem = ({
             "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10",
           )}
         >
-          <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
-            {description}
-          </div>
-
           <div
-            className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
+            className={`${id === 5 ? "" : "max-w-96"} ${id === 3 ? "text-[16px]" : "lg:text-3xl text-lg"
+            } font-sans  font-bold z-10`}
           >
             {title}
           </div>
+          {id === 5 ? (
+            <div className="mt-4">
+              {education?.map((item) => {
+                return (
+                  <div className="mb-4 flex flex-col">
+                    <div className="text-[18px] font-bold">{item?.degree}</div>
+                    <div className="text-[16px] font-semibold">
+                      {item?.description}
+                    </div>
+                    <div className="text-[14px] italic">{item?.marks}</div>
+                  </div>
+                );
+              })}
+            </div>
+          ) : (
+            <div
+              className={`${id === 2 ? "text-xs lg:text-sm" : "md:max-w-32 lg:text-base text-sm"} font-sans font-extralight md:text-xs text-[#C1C2D3] z-50`}
+            >
+              {description}
+            </div>
+          )}
 
           {id === 2 && <GlobeDemo />}
+
+          {id === 1 && (
+            <div className="mt-5">
+              {skillSet?.map((skill) => {
+                return (
+                  <div className="flex flex-col mb-4">
+                    <div className="font-bold text-lg">{skill?.skillSubheading}</div>
+                    <div>{skill?.skills}</div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
 
           {id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">

@@ -9,7 +9,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="w-full mb-4 pb-10" id="contact">
+    <footer className="w-full mb-4 pb-10 md:px-2 sm:px-2" id="contact">
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
           Ready to take <span className="text-purple">your {" "}</span>digital
@@ -28,7 +28,7 @@ const Footer = () => {
         </a>
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
-        <p className="md:text-base text-sm md:font-normal font-light">
+        <p className="md:text-base text-sm md:font-normal font-light mb-2">
           Copyright © 2025 Sarvagya Prateek
         </p>
 

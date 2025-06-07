@@ -129,11 +129,11 @@ export const BentoGridItem = ({
               {education?.map((item, id) => {
                 return (
                   <div className="mb-4 flex flex-col" key={id}>
-                    <div className="text-[18px] font-bold">{item?.degree}</div>
-                    <div className="text-[16px] font-semibold">
+                    <div className="lg:text-[18px] text-[14px] font-bold">{item?.degree}</div>
+                    <div className="lg:text-[16px] text-[12px] font-semibold">
                       {item?.description}
                     </div>
-                    <div className="text-[14px] italic">{item?.marks}</div>
+                    <div className="lg:text-[14px] text-[10px] italic">{item?.marks}</div>
                   </div>
                 );
               })}
@@ -153,10 +153,10 @@ export const BentoGridItem = ({
               {skillSet?.map((skill, id) => {
                 return (
                   <div className="flex flex-col mb-4" key={id}>
-                    <div className="font-bold text-lg">
+                    <div className="font-bold lg:text-[18px] text-[16px]">
                       {skill?.skillSubheading}
                     </div>
-                    <div>{skill?.skills}</div>
+                    <div className="lg:text-[16px] text-[14px]">{skill?.skills}</div>
                   </div>
                 );
               })}

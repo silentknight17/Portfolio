@@ -5,7 +5,7 @@ import { workExperience } from "@/data";
 
 const Experience = () => {
   return (
-    <div className="py-20" id="work_experience">
+    <div className="py-20 px-2" id="work_experience">
       <h1 className="heading">
         My
         <span className="text-purple"> work experience</span>

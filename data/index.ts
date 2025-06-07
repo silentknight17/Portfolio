@@ -152,14 +152,14 @@ export const workExperience = [
   {
     id: 1,
     title: "Senior Software Engineer at Info edge India",
-    desc: "Currently working in this role for Jeevansathi business vertical, building web apps which can are used by Android as well ios apps. Responsible for developing and maintaining the frontend ecosystem",
+    desc: "Currently working in this role for Jeevansathi business vertical, building web apps which can be used by Android as well ios apps. Responsible for developing and maintaining the frontend ecosystem",
     className: "md:col-span-2", 
     thumbnail: "/exp4.svg",
   },
   {
     id: 2,
     title: "Software Engineer at Info edge India",
-    desc: "Building responsive, scalable web apps for Jeevansathi business vertical of Infoedge primarily working in Payments section",
+    desc: "Built responsive, scalable web apps for Jeevansathi business vertical of Infoedge primarily working in Payments section",
     className: "md:col-span-2", 
     thumbnail: "/exp2.svg",
   },

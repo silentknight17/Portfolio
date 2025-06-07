@@ -1,6 +1,5 @@
 "use client";
 
-import { BackgroundGradientAnimation } from "./GradientBg";
 import { Globe } from "./Globe";
 import { GlobeDemo } from "./GridGlobe";
 import { IoCopyOutline } from "react-icons/io5";

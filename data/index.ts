@@ -105,7 +105,7 @@ export const education = [
   {
     id:3,
     degree: "Secondary Education (ICSE) (Class 10)",
-    description: "Holy Cross Convet School, Ballia, Uttar Pradesh", 
+    description: "Holy Cross Convent School, Ballia, Uttar Pradesh", 
     marks: "Percentage: 97.20%",
   }
 ]
